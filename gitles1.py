@@ -12,4 +12,4 @@ else:
             n = m
             cnt+=1
 print(cnt)
-    
+   
