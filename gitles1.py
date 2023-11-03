@@ -14,14 +14,27 @@
 # print(cnt)
 
 
+# n = int(input())
+# l = []
+# a = 0
+# while len(l) < n:
+#     if a % 2 != 0 and a % 3 != 0 and a % 5 != 0:
+#         l.append(a)
+#     a +=1
+# for i in l:
+#     print(i,end=' ')
+
+
 n = int(input())
-l = []
-a = 0
-while len(l) < n:
-    if a % 2 != 0 and a % 3 != 0 and a % 5 != 0:
-        l.append(a)
-    a +=1
-for i in l:
-    print(i,end=' ')
+m = n
+cnt = 0
+while n > 0:
+    s = n % 10
+    m-=s
+    n //= 10
+    if n == 0:
+        n = m
+        cnt+=1
+print(cnt)
 
    
